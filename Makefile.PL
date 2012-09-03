@@ -4,10 +4,10 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-  NAME         => 'app.pl',
+  NAME         => 'myapp.pl',
   VERSION      => '1.0',
-  AUTHOR       => 'Magnus Holm <judofyr@gmail.com>',
-  EXE_FILES    => ['app.pl'],
+  AUTHOR       => 'mark phelan <phelanm@gmail.com>',
+  EXE_FILES    => ['myapp.pl'],
   PREREQ_PM    => {'Mojolicious' => '2.0'},
   test         => {TESTS => 't/*.t'}
 );
