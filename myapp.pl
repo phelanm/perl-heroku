@@ -11,8 +11,8 @@ __DATA__
 
 @@ index.html.ep
 % layout 'default';
-% title 'mphelan Welcome';
-Welcome to the Mojolicious real-time web framework!
+% title 'Welcome phelanm';
+Welcome phelanm to the Mojolicious real-time web framework!
 
 @@ layouts/default.html.ep
 <!DOCTYPE html>
