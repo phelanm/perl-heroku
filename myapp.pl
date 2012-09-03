@@ -1,6 +1,22 @@
 #!/usr/bin/env perl
 use Mojolicious::Lite;
 
-get '/' => {text => 'Hello phelanm Mojo!'};
+get '/' => sub {
+  my $self = shift;
+  $self->render('index');
+};
 
 app->start;
+__DATA__
+
+@@ index.html.ep
+% layout 'default';
+% title 'mphelan Welcome';
+Welcome to the Mojolicious real-time web framework!
+
+@@ layouts/default.html.ep
+<!DOCTYPE html>
+<html>
+  <head><title><%= title %></title></head>
+  <body><%= content %></body>
+</html>
